@@ -1,0 +1,408 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red255\green255\blue254;\red251\green0\blue7;
+\red0\green0\blue0;\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red15\green112\blue1;
+}
+{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c100000\c100000\c99608;\cssrgb\c100000\c0\c0;
+\cssrgb\c0\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c0\c50196\c0;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf0 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf8 \strokec8 "en"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3   \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf0 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \strokec5 KFRE Calculator & Clinical Record\cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf9 \strokec9 <!-- Tailwind CSS -->\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf9 \strokec9 <!-- FontAwesome for Icons -->\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 link\cf0 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf8 \strokec8 "stylesheet"\cf0 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf8 \strokec8 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf9 \strokec9 <!-- React & ReactDOM -->\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 crossorigin\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://unpkg.com/react@18/umd/react.production.min.js"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 crossorigin\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3   \cb1 \
+\cb3   \cf9 \strokec9 <!-- Babel -->\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://unpkg.com/@babel/standalone/babel.min.js"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-slate-900 min-h-screen text-slate-800 font-sans relative overflow-x-hidden"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3   \cf9 \strokec9 <!-- Background Styling: \uc0\u3652 \u3621 \u3656 \u3626 \u3637 \u3609 \u3657 \u3635 \u3648 \u3591 \u3636 \u3609 \u3652 \u3611 \u3626 \u3657 \u3617  (Blue to Orange Gradient) -->\cf0 \cb1 \strokec5 \
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "fixed top-0 left-0 w-full h-full z-0 pointer-events-none"\cf0 \strokec5  \cf4 \strokec4 style\cf6 \strokec6 =\cf8 \strokec8 "background: linear-gradient(135deg, #1e3a8a 0%, #f97316 100%);"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "root"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "relative z-10 p-4 md:p-8"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3   \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf8 \strokec8 "text/babel"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     const \{ useState, useEffect, useRef \} = React;\cb1 \
+\
+\cb3     // --- Data & Helpers ---\cb1 \
+\cb3     const medSuggestions = [\cb1 \
+\cb3       "Amlodipine", "Atenolol", "Bisoprolol", "Carvedilol", "Clonidine", "Diltiazem", "Doxazosin", \cb1 \
+\cb3       "Enalapril", "Furosemide", "Hydralazine", "Hydrochlorothiazide (HCTZ)", "Losartan", "Manidipine", \cb1 \
+\cb3       "Methyldopa", "Metoprolol", "Nifedipine", "Prazosin", "Propranolol", "Spironolactone", \cb1 \
+\cb3       "Valsartan", "Verapamil", "Metformin", "Glipizide", "Gliclazide", "Pioglitazone", "Linagliptin", \cb1 \
+\cb3       "Sitagliptin", "Empagliflozin", "Dapagliflozin", "Atorvastatin", "Simvastatin", "Rosuvastatin",\cb1 \
+\cb3       "Gemfibrozil", "Fenofibrate", "Aspirin", "Clopidogrel", "Warfarin", "Allopurinol", "Colchicine",\cb1 \
+\cb3       "Febuxostat", "Calcium carbonate", "Sodium bicarbonate", "Folic acid", "Ferrous sulfate"\cb1 \
+\cb3     ];\cb1 \
+\
+\cb3     const calculateKFRE = (age, gender, egfr, uacr) => \{\cb1 \
+\cb3         const a = parseFloat(age);\cb1 \
+\cb3         const e = parseFloat(egfr);\cb1 \
+\cb3         const u = parseFloat(uacr);\cb1 \
+\cb3         if (isNaN(a) || isNaN(e) || isNaN(u) || e <= 0 || u <= 0) return null;\cb1 \
+\
+\cb3         const sex = gender === 'Male' ? 1 : 0;\cb1 \
+\cb3         const termAge  = -0.2201 * ((a / 10) - 7.036);\cb1 \
+\cb3         const termSex  = 0.2467 * (sex - 0.5642);\cb1 \
+\cb3         const termEgfr = -0.5567 * ((e / 5) - 7.222);\cb1 \
+\cb3         const termUacr = 0.4510 * (Math.log(u) - 5.137);\cb1 \
+\
+\cb3         const xBeta = termAge + termSex + termEgfr + termUacr;\cb1 \
+\cb3         const s0_2year = 0.9832;\cb1 \
+\cb3         const s0_5year = 0.9365;\cb1 \
+\
+\cb3         const risk2YrDecimal = 1 - Math.pow(s0_2year, Math.exp(xBeta));\cb1 \
+\cb3         const risk5YrDecimal = 1 - Math.pow(s0_5year, Math.exp(xBeta));\cb1 \
+\
+\cb3         const risk2Year = Math.max(0, Math.min(100, risk2YrDecimal * 100));\cb1 \
+\cb3         const risk5Year = Math.max(0, Math.min(100, risk5YrDecimal * 100));\cb1 \
+\
+\cb3         let recommendation = "";\cb1 \
+\cb3         if (risk2Year > 40) \{\cb1 \
+\cb3             recommendation = "Begin KRT preparation and modality education";\cb1 \
+\cb3         \} else if (risk2Year > 10) \{\cb1 \
+\cb3             recommendation = "Initiate multidisciplinary care to delay CKD progression";\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         return \{ risk2: risk2Year.toFixed(2), risk5: risk5Year.toFixed(2), rec: recommendation \};\cb1 \
+\cb3     \};\cb1 \
+\
+\cb3     // --- Components ---\cb1 \
+\cb3     const AutocompleteInput = (\{ value, onChange, onKeyDown, placeholder, className, suggestionsList, innerRef, ...props \}) => \{\cb1 \
+\cb3       const [suggestion, setSuggestion] = useState('');\cb1 \
+\cb3       useEffect(() => \{\cb1 \
+\cb3         if (!value || value.length < 2) \{ setSuggestion(''); return; \}\cb1 \
+\cb3         const match = suggestionsList.find(s => s.toLowerCase().startsWith(value.toLowerCase()));\cb1 \
+\cb3         if (match) setSuggestion(value + match.substring(value.length));\cb1 \
+\cb3         else setSuggestion('');\cb1 \
+\cb3       \}, [value, suggestionsList]);\cb1 \
+\
+\cb3       const handleKeyDown = (e) => \{\cb1 \
+\cb3         if ((e.key === 'Enter' || e.key === 'Tab' || e.key === 'ArrowRight') && suggestion && suggestion.toLowerCase() !== value.toLowerCase()) \{\cb1 \
+\cb3           e.preventDefault(); e.stopPropagation();\cb1 \
+\cb3           onChange(\{ target: \{ value: suggestion, name: props.name \} \});\cb1 \
+\cb3         \} else \{ if (onKeyDown) onKeyDown(e); \}\cb1 \
+\cb3       \};\cb1 \
+\
+\cb3       return (\cb1 \
+\cb3         <div className=\{`relative flex flex-1`\}>\cb1 \
+\cb3           <input ref=\{innerRef\} type="text" value=\{value\} onChange=\{onChange\} onKeyDown=\{handleKeyDown\} placeholder=\{placeholder\} className=\{`$\{className\} w-full relative z-10 bg-white/70 backdrop-blur-sm border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 rounded-lg p-2.5 text-sm transition-all outline-none`\} \{...props\} />\cb1 \
+\cb3           \{suggestion && suggestion.toLowerCase().startsWith(value.toLowerCase()) && (\cb1 \
+\cb3             <div className=\{`absolute inset-0 pointer-events-none p-2.5 text-sm font-sans flex items-center overflow-hidden whitespace-pre z-20`\}>\cb1 \
+\cb3                <span className="text-transparent">\{value\}</span>\cb1 \
+\cb3                <span className="text-slate-400 font-semibold">\{suggestion.substring(value.length)\}</span>\cb1 \
+\cb3             </div>\cb1 \
+\cb3           )\}\cb1 \
+\cb3         </div>\cb1 \
+\cb3       );\cb1 \
+\cb3     \};\cb1 \
+\
+\cb3     const App = () => \{\cb1 \
+\cb3       const [formData, setFormData] = useState(\{\cb1 \
+\cb3         name: '', age: '', gender: 'Male',\cb1 \
+\cb3         bun: '', cr: '', gfr: '', \cb1 \
+\cb3         na: '', k: '', cl: '', hco3: '',\cb1 \
+\cb3         uacr: '', upcr: '', hb: '', a1c: '',\cb1 \
+\cb3         labOther: '',\cb1 \
+\cb3         meds: []\cb1 \
+\cb3       \});\cb1 \
+\
+\cb3       const [newMed, setNewMed] = useState(\{ name: '', dose: '', freq: '' \});\cb1 \
+\cb3       const medNameRef = useRef(null);\cb1 \
+\cb3       const medDoseRef = useRef(null);\cb1 \
+\cb3       const medFreqRef = useRef(null);\cb1 \
+\cb3       const [copied, setCopied] = useState(false);\cb1 \
+\
+\cb3       const handleChange = (e) => \{\cb1 \
+\cb3         const \{ name, value \} = e.target;\cb1 \
+\cb3         setFormData(prev => (\{ ...prev, [name]: value \}));\cb1 \
+\cb3       \};\cb1 \
+\
+\cb3       // Med Handlers\cb1 \
+\cb3       const handleMedInputKeyDown = (e, nextRef, isLast) => \{\cb1 \
+\cb3         if (e.key === 'Enter') \{ e.preventDefault(); e.stopPropagation(); if (isLast) addMed(); else if (nextRef && nextRef.current) nextRef.current.focus(); \}\cb1 \
+\cb3       \};\cb1 \
+\cb3       \cb1 \
+\cb3       const addMed = () => \{\cb1 \
+\cb3         if (!newMed.name.trim()) \{ if (medNameRef.current) medNameRef.current.focus(); return; \}\cb1 \
+\cb3         setFormData(prev => (\{ \cb1 \
+\cb3             ...prev, \cb1 \
+\cb3             meds: [...prev.meds, \{ id: Date.now(), ...newMed \}] \cb1 \
+\cb3         \}));\cb1 \
+\cb3         setNewMed(\{ name: '', dose: '', freq: '' \});\cb1 \
+\cb3         if (medNameRef.current) medNameRef.current.focus();\cb1 \
+\cb3       \};\cb1 \
+\cb3       \cb1 \
+\cb3       const removeMed = (id) => \{\cb1 \
+\cb3           setFormData(prev => (\{ ...prev, meds: prev.meds.filter(m => m.id !== id) \}));\cb1 \
+\cb3       \};\cb1 \
+\
+\cb3       const kfre = calculateKFRE(formData.age, formData.gender, formData.gfr, formData.uacr);\cb1 \
+\
+\cb3       const summaryText = (() => \{\cb1 \
+\cb3           let parts = [];\cb1 \
+\cb3           if (formData.name || formData.age) \{\cb1 \
+\cb3               let ptInfo = "Patient:";\cb1 \
+\cb3               if (formData.name) ptInfo += ` $\{formData.name\}`;\cb1 \
+\cb3               if (formData.age) ptInfo += ` ($\{formData.age\} Yrs, $\{formData.gender\})`;\cb1 \
+\cb3               else ptInfo += ` ($\{formData.gender\})`;\cb1 \
+\cb3               parts.push(ptInfo);\cb1 \
+\cb3           \}\cb1 \
+\
+\cb3           let labs = [];\cb1 \
+\cb3           if (formData.bun) labs.push(`BUN $\{formData.bun\}`);\cb1 \
+\cb3           if (formData.cr) labs.push(`Cr $\{formData.cr\}`);\cb1 \
+\cb3           if (formData.gfr) labs.push(`eGFR $\{formData.gfr\}`);\cb1 \
+\cb3           if (formData.na || formData.k || formData.cl || formData.hco3) \{\cb1 \
+\cb3               labs.push(`E-lyte: $\{formData.na||'-'\}/$\{formData.k||'-'\}/$\{formData.cl||'-'\}/$\{formData.hco3||'-'\}`);\cb1 \
+\cb3           \}\cb1 \
+\cb3           if (formData.hb) labs.push(`Hb $\{formData.hb\}`);\cb1 \
+\cb3           if (formData.a1c) labs.push(`HbA1c $\{formData.a1c\}`);\cb1 \
+\cb3           if (formData.uacr) labs.push(`UACR $\{formData.uacr\}`);\cb1 \
+\cb3           if (formData.upcr) labs.push(`UPCR $\{formData.upcr\}`);\cb1 \
+\cb3           \cb1 \
+\cb3           let labsText = labs.join(', ');\cb1 \
+\cb3           if (formData.labOther) \{\cb1 \
+\cb3               labsText = labsText ? `$\{labsText\}\\nOther Labs: $\{formData.labOther\}` : `Other Labs: $\{formData.labOther\}`;\cb1 \
+\cb3           \}\cb1 \
+\cb3           if (labsText) parts.push(`[ Labs ]\\n$\{labsText\}`);\cb1 \
+\
+\cb3           if (kfre) \{\cb1 \
+\cb3               parts.push(`[ KFRE Risk (4-variable) ]\\n2-Year Risk: $\{kfre.risk2\}%\\n5-Year Risk: $\{kfre.risk5\}%\\nRef: kidneyfailurerisk.com`);\cb1 \
+\cb3           \}\cb1 \
+\
+\cb3           if (formData.meds.length > 0) \{\cb1 \
+\cb3               let medsList = formData.meds.map((m, i) => `$\{i+1\}. $\{m.name\} $\{m.dose\} $\{m.freq\}`.trim());\cb1 \
+\cb3               parts.push(`[ Medications ]\\n$\{medsList.join('\\n')\}`);\cb1 \
+\cb3           \}\cb1 \
+\
+\cb3           return parts.join('\\n\\n');\cb1 \
+\cb3       \})();\cb1 \
+\
+\cb3       const handleCopy = () => \{\cb1 \
+\cb3           try \{\cb1 \
+\cb3               // \uc0\u3651 \u3594 \u3657 \u3623 \u3636 \u3608 \u3637  document.execCommand('copy') \u3648 \u3614 \u3639 \u3656 \u3629 \u3651 \u3627 \u3657 \u3651 \u3594 \u3657 \u3652 \u3604 \u3657 \u3607 \u3640 \u3585 \u3648 \u3610 \u3619 \u3634 \u3623 \u3660 \u3648 \u3595 \u3629 \u3619 \u3660 \u3649 \u3621 \u3632  iframe\cb1 \
+\cb3               const textArea = document.createElement("textarea");\cb1 \
+\cb3               textArea.value = summaryText;\cb1 \
+\cb3               \cb1 \
+\cb3               // \uc0\u3595 \u3656 \u3629 \u3609  textarea \u3652 \u3617 \u3656 \u3651 \u3627 \u3657 \u3617 \u3629 \u3591 \u3648 \u3627 \u3655 \u3609 \cb1 \
+\cb3               textArea.style.position = "fixed";\cb1 \
+\cb3               textArea.style.left = "-999999px";\cb1 \
+\cb3               textArea.style.top = "-999999px";\cb1 \
+\cb3               document.body.appendChild(textArea);\cb1 \
+\cb3               \cb1 \
+\cb3               textArea.focus();\cb1 \
+\cb3               textArea.select();\cb1 \
+\cb3               document.execCommand('copy');\cb1 \
+\cb3               \cb1 \
+\cb3               textArea.remove();\cb1 \
+\cb3               \cb1 \
+\cb3               setCopied(true);\cb1 \
+\cb3               setTimeout(() => setCopied(false), 2000);\cb1 \
+\cb3           \} catch (err) \{\cb1 \
+\cb3               console.error('Failed to copy text: ', err);\cb1 \
+\cb3           \}\cb1 \
+\cb3       \};\cb1 \
+\
+\cb3       return (\cb1 \
+\cb3         <div className="max-w-4xl mx-auto space-y-6">\cb1 \
+\cb3           \cb1 \
+\cb3           \{/* Header */\}\cb1 \
+\cb3           <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/20 flex items-center gap-4">\cb1 \
+\cb3              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-inner">\cb1 \
+\cb3                 <i className="fa-solid fa-calculator text-white text-2xl"></i>\cb1 \
+\cb3              </div>\cb1 \
+\cb3              <div>\cb1 \
+\cb3                  <h1 className="text-2xl font-extrabold text-white tracking-wide">KFRE & Clinical Entry</h1>\cb1 \
+\cb3                  <p className="text-blue-200 text-sm">Kidney Failure Risk Equation Calculator</p>\cb1 \
+\cb3              </div>\cb1 \
+\cb3           </div>\cb1 \
+\
+\cb3           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">\cb1 \
+\cb3               \cb1 \
+\cb3               \{/* Left Column - Demo & Labs */\}\cb1 \
+\cb3               <div className="md:col-span-7 space-y-6">\cb1 \
+\cb3                   \cb1 \
+\cb3                   \{/* Demographics (Required for KFRE) */\}\cb1 \
+\cb3                   <div className="bg-white/90 p-5 rounded-2xl shadow-md border border-slate-200">\cb1 \
+\cb3                      <h2 className="text-sm font-bold text-slate-800 mb-4 border-b pb-2 flex items-center"><i className="fa-solid fa-user text-blue-600 mr-2"></i> Patient Demographics</h2>\cb1 \
+\cb3                      <div className="mb-4">\cb1 \
+\cb3                         <label className="block text-xs font-bold text-slate-500 mb-1">Name</label>\cb1 \
+\cb3                         <input type="text" name="name" value=\{formData.name\} onChange=\{handleChange\} className="w-full rounded-lg p-2.5 text-sm bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Name (Optional)..." />\cb1 \
+\cb3                      </div>\cb1 \
+\cb3                      <div className="grid grid-cols-2 gap-4">\cb1 \
+\cb3                         <div>\cb1 \
+\cb3                             <label className="block text-xs font-bold text-blue-600 mb-1">Age (Years) *</label>\cb1 \
+\cb3                             <input type="number" name="age" value=\{formData.age\} onChange=\{handleChange\} className="w-full rounded-lg p-2.5 text-sm bg-blue-50 border border-blue-200 focus:ring-2 focus:ring-blue-500 outline-none font-bold" placeholder="Req for KFRE" />\cb1 \
+\cb3                         </div>\cb1 \
+\cb3                         <div>\cb1 \
+\cb3                             <label className="block text-xs font-bold text-blue-600 mb-1">Gender *</label>\cb1 \
+\cb3                             <div className="flex bg-slate-100 rounded-lg p-1">\cb1 \
+\cb3                                 \{['Male', 'Female'].map(g => (\cb1 \
+\cb3                                     <button key=\{g\} type="button" onClick=\{() => setFormData(prev => (\{...prev, gender: g\}))\} \cb1 \
+\cb3                                     className=\{`flex-1 text-sm py-1.5 rounded-md font-bold transition-all $\{formData.gender === g ? 'bg-blue-600 text-white shadow' : 'text-slate-500 hover:text-slate-700'\}`\}>\cb1 \
+\cb3                                         \{g\}\cb1 \
+\cb3                                     </button>\cb1 \
+\cb3                                 ))\}\cb1 \
+\cb3                             </div>\cb1 \
+\cb3                         </div>\cb1 \
+\cb3                      </div>\cb1 \
+\cb3                   </div>\cb1 \
+\
+\cb3                   \{/* Lab Results */\}\cb1 \
+\cb3                   <div className="bg-white/90 p-5 rounded-2xl shadow-md border border-slate-200">\cb1 \
+\cb3                      <h2 className="text-sm font-bold text-slate-800 mb-4 border-b pb-2 flex items-center"><i className="fa-solid fa-flask text-blue-600 mr-2"></i> Laboratory</h2>\cb1 \
+\cb3                      \cb1 \
+\cb3                      \{/* KFRE Required Labs */\}\cb1 \
+\cb3                      <div className="bg-blue-50/50 border border-blue-100 rounded-xl p-4 mb-5">\cb1 \
+\cb3                          <div className="text-xs font-bold text-blue-800 mb-3 uppercase tracking-wider flex items-center"><i className="fa-solid fa-circle-exclamation mr-1.5"></i> Required for KFRE</div>\cb1 \
+\cb3                          <div className="grid grid-cols-2 gap-4">\cb1 \
+\cb3                             <div>\cb1 \
+\cb3                                 <label className="block text-xs font-bold text-blue-600 mb-1">eGFR (mL/min/1.73m\'b2)</label>\cb1 \
+\cb3                                 <input type="number" step="any" name="gfr" value=\{formData.gfr\} onChange=\{handleChange\} className="w-full rounded-lg p-2.5 text-sm bg-white border border-blue-300 focus:ring-2 focus:ring-blue-500 outline-none font-bold text-blue-900" />\cb1 \
+\cb3                             </div>\cb1 \
+\cb3                             <div>\cb1 \
+\cb3                                 <label className="block text-xs font-bold text-blue-600 mb-1">UACR (mg/g)</label>\cb1 \
+\cb3                                 <input type="number" step="any" name="uacr" value=\{formData.uacr\} onChange=\{handleChange\} className="w-full rounded-lg p-2.5 text-sm bg-white border border-blue-300 focus:ring-2 focus:ring-blue-500 outline-none font-bold text-blue-900" />\cb1 \
+\cb3                             </div>\cb1 \
+\cb3                          </div>\cb1 \
+\cb3                      </div>\cb1 \
+\
+\cb3                      \{/* Other Basic Labs */\}\cb1 \
+\cb3                      <div className="grid grid-cols-2 gap-4 mb-4">\cb1 \
+\cb3                          <div><label className="block text-xs font-bold text-slate-500 mb-1">BUN</label><input type="number" step="any" name="bun" value=\{formData.bun\} onChange=\{handleChange\} className="w-full rounded-lg p-2.5 text-sm bg-slate-50 border border-slate-300 outline-none" /></div>\cb1 \
+\cb3                          <div><label className="block text-xs font-bold text-slate-500 mb-1">Creatinine</label><input type="number" step="any" name="cr" value=\{formData.cr\} onChange=\{handleChange\} className="w-full rounded-lg p-2.5 text-sm bg-slate-50 border border-slate-300 outline-none" /></div>\cb1 \
+\cb3                      </div>\cb1 \
+\cb3                      \cb1 \
+\cb3                      <label className="block text-xs font-bold text-slate-500 mb-2 mt-4">Electrolytes</label>\cb1 \
+\cb3                      <div className="grid grid-cols-4 gap-2 mb-4">\cb1 \
+\cb3                          <input type="number" step="any" name="na" value=\{formData.na\} onChange=\{handleChange\} placeholder="Na" className="w-full rounded-lg p-2 text-sm text-center bg-slate-50 border border-slate-300 outline-none" />\cb1 \
+\cb3                          <input type="number" step="any" name="k" value=\{formData.k\} onChange=\{handleChange\} placeholder="K" className="w-full rounded-lg p-2 text-sm text-center bg-slate-50 border border-slate-300 outline-none" />\cb1 \
+\cb3                          <input type="number" step="any" name="cl" value=\{formData.cl\} onChange=\{handleChange\} placeholder="Cl" className="w-full rounded-lg p-2 text-sm text-center bg-slate-50 border border-slate-300 outline-none" />\cb1 \
+\cb3                          <input type="number" step="any" name="hco3" value=\{formData.hco3\} onChange=\{handleChange\} placeholder="HCO3" className="w-full rounded-lg p-2 text-sm text-center bg-slate-50 border border-slate-300 outline-none" />\cb1 \
+\cb3                      </div>\cb1 \
+\
+\cb3                      <div className="grid grid-cols-3 gap-3">\cb1 \
+\cb3                          <div><label className="block text-xs font-bold text-slate-500 mb-1">Hb (g/dL)</label><input type="number" step="any" name="hb" value=\{formData.hb\} onChange=\{handleChange\} className="w-full rounded-lg p-2 text-sm bg-slate-50 border border-slate-300 outline-none" /></div>\cb1 \
+\cb3                          <div><label className="block text-xs font-bold text-slate-500 mb-1">HbA1c (%)</label><input type="number" step="any" name="a1c" value=\{formData.a1c\} onChange=\{handleChange\} className="w-full rounded-lg p-2 text-sm bg-slate-50 border border-slate-300 outline-none" /></div>\cb1 \
+\cb3                          <div><label className="block text-xs font-bold text-slate-500 mb-1">UPCR (g/g)</label><input type="number" step="any" name="upcr" value=\{formData.upcr\} onChange=\{handleChange\} className="w-full rounded-lg p-2 text-sm bg-slate-50 border border-slate-300 outline-none" /></div>\cb1 \
+\cb3                      </div>\cb1 \
+\
+\cb3                      <div className="mt-4">\cb1 \
+\cb3                          <label className="block text-xs font-bold text-slate-500 mb-1">Other Labs (\uc0\u3612 \u3621 \u3648 \u3621 \u3639 \u3629 \u3604 \u3629 \u3639 \u3656 \u3609 \u3654 )</label>\cb1 \
+\cb3                          <textarea name="labOther" value=\{formData.labOther\} onChange=\{handleChange\} rows="2" placeholder="\uc0\u3619 \u3632 \u3610 \u3640 \u3612 \u3621 \u3648 \u3621 \u3639 \u3629 \u3604 \u3629 \u3639 \u3656 \u3609 \u3654 ..." className="w-full rounded-lg p-2.5 text-sm bg-slate-50 border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none resize-y custom-scrollbar"></textarea>\cb1 \
+\cb3                      </div>\cb1 \
+\cb3                   </div>\cb1 \
+\cb3               </div>\cb1 \
+\
+\cb3               \{/* Right Column - KFRE Display & Meds */\}\cb1 \
+\cb3               <div className="md:col-span-5 space-y-6">\cb1 \
+\cb3                   \cb1 \
+\cb3                   \{/* KFRE Results Card */\}\cb1 \
+\cb3                   <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-2xl shadow-xl border border-slate-700 relative overflow-hidden">\cb1 \
+\cb3                       <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full blur-3xl opacity-20 -mr-10 -mt-10"></div>\cb1 \
+\cb3                       <h2 className="text-lg font-bold text-white mb-5 flex items-center relative z-10"><i className="fa-solid fa-chart-pie text-blue-400 mr-2"></i> KFRE Result</h2>\cb1 \
+\cb3                       \cb1 \
+\cb3                       \{kfre ? (\cb1 \
+\cb3                           <div className="space-y-4 relative z-10 animate-fade-in">\cb1 \
+\cb3                               <div className="flex items-center justify-between bg-white/10 p-3 rounded-xl border border-white/10">\cb1 \
+\cb3                                   <span className="text-sm font-semibold text-blue-200">2-Year Risk</span>\cb1 \
+\cb3                                   <span className="text-2xl font-black text-white">\{kfre.risk2\}%</span>\cb1 \
+\cb3                               </div>\cb1 \
+\cb3                               <div className="flex items-center justify-between bg-white/10 p-3 rounded-xl border border-white/10">\cb1 \
+\cb3                                   <span className="text-sm font-semibold text-blue-200">5-Year Risk</span>\cb1 \
+\cb3                                   <span className="text-2xl font-black text-white">\{kfre.risk5\}%</span>\cb1 \
+\cb3                               </div>\cb1 \
+\cb3                               \{kfre.rec && (\cb1 \
+\cb3                                   <div className="bg-orange-500/20 border border-orange-500/30 p-3 rounded-xl mt-4">\cb1 \
+\cb3                                       <span className="block text-xs font-bold text-orange-300 mb-1">Recommendation:</span>\cb1 \
+\cb3                                       <p className="text-sm text-orange-100 leading-snug">\{kfre.rec\}</p>\cb1 \
+\cb3                                   </div>\cb1 \
+\cb3                               )\}\cb1 \
+\cb3                           </div>\cb1 \
+\cb3                       ) : (\cb1 \
+\cb3                           <div className="py-8 text-center relative z-10">\cb1 \
+\cb3                               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-slate-700 text-slate-500 mb-3"><i className="fa-solid fa-hourglass-empty text-xl"></i></div>\cb1 \
+\cb3                               <p className="text-sm text-slate-400">Fill Age, Gender, eGFR, and UACR to calculate risk.</p>\cb1 \
+\cb3                           </div>\cb1 \
+\cb3                       )\}\cb1 \
+\cb3                   </div>\cb1 \
+\
+\cb3                   \{/* Medications */\}\cb1 \
+\cb3                   <div className="bg-white/90 p-5 rounded-2xl shadow-md border border-slate-200">\cb1 \
+\cb3                      <h2 className="text-sm font-bold text-slate-800 mb-4 border-b pb-2 flex items-center"><i className="fa-solid fa-pills text-blue-600 mr-2"></i> Medications</h2>\cb1 \
+\cb3                      \cb1 \
+\cb3                      <div className="space-y-2 mb-4 max-h-[250px] overflow-y-auto pr-1 custom-scrollbar">\cb1 \
+\cb3                          \{formData.meds.length === 0 ? (\cb1 \
+\cb3                              <div className="text-center py-6 text-slate-400 text-sm italic bg-slate-50 rounded-lg border border-dashed border-slate-200">No medications added.</div>\cb1 \
+\cb3                          ) : (\cb1 \
+\cb3                              formData.meds.map((med, idx) => (\cb1 \
+\cb3                                  <div key=\{med.id\} className="flex items-center gap-2 bg-white border border-slate-200 p-2.5 rounded-xl shadow-sm group">\cb1 \
+\cb3                                      <span className="text-xs font-bold text-slate-400 w-5">\{idx + 1\}.</span>\cb1 \
+\cb3                                      <div className="flex-1 min-w-0">\cb1 \
+\cb3                                          <div className="text-sm font-bold text-slate-800 truncate">\{med.name\}</div>\cb1 \
+\cb3                                          <div className="text-xs text-slate-500">\{med.dose\} \{med.freq\}</div>\cb1 \
+\cb3                                      </div>\cb1 \
+\cb3                                      <button type="button" onClick=\{() => removeMed(med.id)\} className="text-slate-300 hover:text-red-500 p-1.5 transition-colors"><i className="fa-solid fa-xmark"></i></button>\cb1 \
+\cb3                                  </div>\cb1 \
+\cb3                              ))\cb1 \
+\cb3                          )\}\cb1 \
+\cb3                      </div>\cb1 \
+\
+\cb3                      <div className="pt-3 border-t border-slate-200">\cb1 \
+\cb3                          <label className="block text-xs font-bold text-slate-500 mb-2">Add Medication</label>\cb1 \
+\cb3                          <div className="flex flex-col gap-2">\cb1 \
+\cb3                              <AutocompleteInput innerRef=\{medNameRef\} value=\{newMed.name\} onChange=\{e => setNewMed(\{...newMed, name: e.target.value\})\} onKeyDown=\{(e) => handleMedInputKeyDown(e, medDoseRef, false)\} placeholder="Med name..." suggestionsList=\{medSuggestions\} />\cb1 \
+\cb3                              <div className="flex gap-2">\cb1 \
+\cb3                                  <input ref=\{medDoseRef\} type="text" value=\{newMed.dose\} onChange=\{e => setNewMed(\{...newMed, dose: e.target.value\})\} onKeyDown=\{(e) => handleMedInputKeyDown(e, medFreqRef, false)\} placeholder="Dose (e.g. 1 tab)" className="w-1/2 rounded-lg p-2.5 text-sm bg-white/70 border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" />\cb1 \
+\cb3                                  <input ref=\{medFreqRef\} type="text" value=\{newMed.freq\} onChange=\{e => setNewMed(\{...newMed, freq: e.target.value\})\} onKeyDown=\{(e) => handleMedInputKeyDown(e, medNameRef, true)\} placeholder="Freq (e.g. pc)" className="w-1/2 rounded-lg p-2.5 text-sm bg-white/70 border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none" />\cb1 \
+\cb3                              </div>\cb1 \
+\cb3                              <button type="button" onClick=\{addMed\} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg shadow-sm mt-1 transition-colors"><i className="fa-solid fa-plus mr-1"></i> Add Med</button>\cb1 \
+\cb3                          </div>\cb1 \
+\cb3                      </div>\cb1 \
+\cb3                   </div>\cb1 \
+\
+\cb3               </div>\cb1 \
+\cb3           </div>\cb1 \
+\
+\cb3           \{/* Summary Note Section */\}\cb1 \
+\cb3           <div className="bg-white/90 p-6 rounded-2xl shadow-lg border border-slate-200 mt-6 mb-8 animate-fade-in">\cb1 \
+\cb3              <div className="flex justify-between items-center mb-4 border-b pb-3">\cb1 \
+\cb3                  <h2 className="text-lg font-bold text-slate-800 flex items-center"><i className="fa-solid fa-file-lines text-blue-600 mr-2"></i> Summary Note</h2>\cb1 \
+\cb3                  <button type="button" onClick=\{handleCopy\} className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-2 px-5 rounded-xl shadow-md transition-all active:scale-95 flex items-center">\cb1 \
+\cb3                      \{copied ? <><i className="fa-solid fa-check mr-2"></i> Copied!</> : <><i className="fa-solid fa-copy mr-2"></i> Copy Note</>\}\cb1 \
+\cb3                  </button>\cb1 \
+\cb3              </div>\cb1 \
+\cb3              <textarea readOnly value=\{summaryText\} className="w-full h-48 bg-slate-50/50 border border-slate-300 rounded-xl p-4 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y shadow-inner"></textarea>\cb1 \
+\cb3           </div>\cb1 \
+\cb3         </div>\cb1 \
+\cb3       );\cb1 \
+\cb3     \};\cb1 \
+\
+\cb3     const root = ReactDOM.createRoot(document.getElementById('root'));\cb1 \
+\cb3     root.render(<App />);\cb1 \
+\cb3   \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+}
